@@ -1,6 +1,7 @@
 import React from "react";
 import Figure from "./Figure";
 import '../styles/Component.css';
+import AboutProfile from "../static/Aboutme.png";
 
 function About() {
   return (
@@ -20,7 +21,7 @@ function About() {
             <Figure top="250px" left="0px" rotation={-90} />
 
             <img 
-                src="/static/Aboutme.png" 
+                src={AboutProfile} 
                 alt="Profilis" 
                 className="framed-photo"
             />

@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Component.css';
+import Logo from "../static/logo.png";
 
 function Header () {
     return (
@@ -26,7 +27,7 @@ function Header () {
             </svg>
 
             <div className="logo-container position-absolute top-50 start-50 translate-middle">
-                <img src="/static/logo.png" alt="Logo" className="logo"/>
+                <img src={Logo} alt="Logo" className="logo"/>
             </div>
         </div>
         </>

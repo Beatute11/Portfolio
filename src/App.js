@@ -8,7 +8,8 @@ import About from './components/About';
 import Logo from './components/Logo';
 import Header from './components/Logo';
 import { useState } from 'react';
-import ranka from './ranka.svg';
+import ranka from './static/ranka.svg';
+import igudziai from './static/igudziai.png';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
             />
 
             <div className="skills-card">
-              <img src="/static/igudziai.png" alt='igudziai' width='300px' height='250px'
+              <img src={igudziai} alt='igudziai' width='300px' height='250px'
                     className='igudziai-img' />
             </div>
           </div>

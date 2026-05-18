@@ -1,4 +1,10 @@
 import React from "react";
+import '../styles/Component.css';
+import Map from "../static/map.png";
+import Mail from "../static/mail.png";
+import Facebook from "../static/facebook.png";
+import Linkedin from "../static/linkedin.png";
+import Calling from "../static/Contactme.png";
 
 function Contacts() {
    return (
@@ -6,7 +12,7 @@ function Contacts() {
       <div className="row h-100 align-items-center position-relative">
         <div className="col-12 col-md-5 text-center text-md-start ps-md-5 mb-5 mb-md-0">
             <img 
-              src="/static/map.png"
+              src={Map}
               alt="Vilnius" 
               className="vilnius-map img-fluid"
             />
@@ -17,7 +23,7 @@ function Contacts() {
             {/* CV Atsisiuntimo mygtukas */}
             <div className="cv-container mb-4">
               <a 
-                href="/static/Beata_CV.pdf" // Kelias iki tavo CV failo public/static aplanke
+                href="/static/Beata_CV.pdf" 
                 download="Beata_CV.pdf"
                 className="btn btn-dark cv-btn px-4 py-2 text-uppercase fw-bold"
               >
@@ -30,20 +36,20 @@ function Contacts() {
             {/* Ikonos */}
             <div className="social-icons d-flex gap-3 justify-content-center">
               <a href="https://www.linkedin.com/in/beata-balnaite-3434b2349/" target="_blank" rel="noreferrer">
-                <img src="/static/linkedin.png" alt="LinkedIn" className="social-png" />
+                <img src={Linkedin} alt="LinkedIn" className="social-png" />
               </a>
               <a href="mailto:beata.balnaite@gmail.com">
-                <img src="/static/mail.png" alt="Email" className="social-png" />
+                <img src={Mail} alt="Email" className="social-png" />
               </a>
               <a href="https://www.facebook.com/beata.balnaite" target="_blank" rel="noreferrer">
-                <img src="/static/facebook.png" alt="Facebook" className="social-png" />
+                <img src={Facebook} alt="Facebook" className="social-png" />
               </a>
             </div>
 
           </div>
 
           <img 
-            src="/static/Contactme.png"
+            src={Calling}
             alt="Beata-susisiekime" 
             className="corner-avatar img-fluid d-none d-md-block"
           />
