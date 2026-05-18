@@ -1,0 +1,343 @@
+/* LOGO */
+.logo-container {
+    height: 30px;
+    width: 120px;
+    margin: 10px auto;
+}
+
+.logo {
+    width: 150px;
+    height: 30px;
+}
+
+.header-top {
+  height: 60px;
+}
+
+/* FAILAI */
+/* .file {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80vh;
+  transform: translateY(calc(100% - 50px)); 
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), width 0.5s ease, left 0.5s ease;
+  pointer-events: auto;
+} */
+
+.file-container {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 80vh;
+  transform: translateY(calc(100% - 50px)); 
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), width 0.5s ease, left 0.5s ease;
+  pointer-events: auto;
+}
+
+.files-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.file-tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  padding: 12px 0;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.file-body {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 95vw;
+  height: calc(100% - 44px);
+  border-radius: 0 20px 0 0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.file-container.is-open {
+  transform: translateY(0);
+  width: 100%;
+  left: 5% !important;
+  z-index: 100;
+}
+
+.about-content {
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.photo-frame-container {
+    position: relative;
+    width: 277px; 
+    height: 380px;
+    margin: 0 auto;
+}
+
+/* Profilio nuotrauka About */
+.framed-photo {
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  width: 221px;
+  height: 321px;
+  aspect-ratio: 42 / 61;
+  object-fit: cover; 
+  z-index: 2;
+}
+
+.introduction1 {
+  max-width: 350px;
+  color: #020007;
+  text-align: left;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.introduction2 {
+  max-width: 350px;
+  color: #020007;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.contacts-page {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden; /* Kad išlendanti nuotrauka neiškreiptų failo rėmų */
+}
+
+/* --- ŽEMĖLAPIO BLOKAS --- */
+.map-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.vilnius-map {
+  max-width: 270px !important;
+  height: auto;
+  opacity: 0.9;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+
+.social-png {
+  width: 70px;
+  height: auto;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-png:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.cv-btn {
+  background-color: #020007;
+  border: 2px solid #020007;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: transparent;
+  color: #020007 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.corner-avatar {
+  position: absolute;
+  bottom: -30px; 
+  right: -10px; 
+  max-height: 280px;
+  width: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* PROJEKTAI */
+.projects-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects-scroll-wrapper {
+  display: flex;
+  gap: 30px; 
+  width: 100%;
+  padding-bottom: 20px;
+  overflow-x: auto; 
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; 
+}
+
+.project-card-custom {
+  flex: 0 0 420px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.project-card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.project-image-box {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135px, #fff5e6, #a17fe0);
+  border-radius: 12px;
+  border: 2px solid #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img {
+  width: 90%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.project-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  height: 70px;
+  overflow: hidden;
+}
+
+.badge {
+  font-size: 0.8rem;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.projects-mascot {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  max-height: 180px;
+  width: auto;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.projects-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-scroll-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.projects-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 10px;
+}
+
+.projects-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #5146e5;
+}
+
+@media (max-width: 768px) {
+  
+  .file-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .file-container {
+    position: relative;
+    left: auto !important;
+    width: 30%;
+    height: 85vh;
+    transform: translateY(calc(100% + 45px)); 
+  }
+
+  .file-tab {
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .file-body {
+    top: 38px;
+    height: calc(100% - 38px);
+    padding: 20px 15px;
+    border-radius: 0 10px 0 0;
+  }
+
+  .file-container.is-open {
+    position: absolute;
+    left: 0 !important; 
+    width: 100vw;
+    height: 90vh;
+    transform: translateY(0);
+    padding: 0;
+  }
+
+   .corner-avatar {
+    max-height: 180px; /* Telefone padarome mažesnę, kad netrukdytų */
+    bottom: -10px;
+    right: 0;
+  }
+  
+  .map-text {
+    font-size: 2.2rem;
+  }
+  
+  .social-png {
+    width: 55px; /* Mažesnės ikonos telefone */
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card-custom {
+    flex: 0 0 290px; /* Telefone kortelės tampa siauresnės, kad būtų patogu braukti */
+  }
+}
+
